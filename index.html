@@ -7,47 +7,58 @@
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
             rel='stylesheet'>
+        <link rel="icon" type="image/png" href="images/pets.png">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mali&family=Montserrat:wght@300;400&display=swap"
+            rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <!-- JS -->
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <header>
             <!-- Navigation -->
             <nav class="nav">
-                <div class="nav__logo">
-                    <a href="index.html">
-                        <img src="images/paw.png" alt="logo">
-                    </a>
-                </div>
+                <a href="index.html" class="nav__logo">
+                        <img src="images/cat.png" alt="logo">
+                </a>
                 <div class="nav__links">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#cats">Cats</a></li>
-                        <li><a href="#reserve">Reserve</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="link" href="#about">About</a></li>
+                        <li><a class="link" href="#menu">Menu</a></li>
+                        <li><a class="link" href="#cats">Cats</a></li>
+                        <li><a class="link" href="#reserve">Reserve</a></li>
+                        <li><a class="link" href="#contact">Contact</a></li>
                     </ul>
+                </div>
+                <div class="nav__toggle">
+                    <i class='bx bx-x' id="close-icon"></i>
+                    <i class='bx bx-menu' id="menu-icon"></i>
                 </div>
             </nav>
         </header>
         <main>
-            <!-- Logo -->
-            <div class="logo">
-                <div class="logo__info">
+            <!-- Info -->
+            <div class="info">
+                <div class="info__text">
                     <h1>CATnap Cafe</h1>
                     <p>Coffee, Cats, and Contentment: Your Purrfect Retreat.</p>
                 </div>
-                <div class="logo__image">
-                    <img src="images/sleppycat.jpg" alt="cat" width="500"
-                        height="300">
-                </div>
-                <div class="logo__icons">
-                    <span class="line left"></span>
+                <img class="info__image" src="images/sleppycat.jpg">
+                <div class="info__icons">
+                    <span class="left">&boxh;</span>
                     <ul>
                         <li><i class='bx bxl-facebook'></i></li>
                         <li><i class='bx bxl-instagram-alt'></i></li>
                         <li><i class='bx bxl-twitter'></i></li>
                         <li><i class='bx bxl-youtube'></i></li>
                     </ul>
-                    <span class="line right"></span>
+                    <span class="right">&boxh;</span>
                 </div>
             </div>
             <!-- About -->
@@ -114,19 +125,19 @@
                 <div class="card">
                     <img src="images/cafe.jpg" alt="cafe" width="500"
                         height="300">
-                        <img src="images/cafe2.jpg" alt="cafe" width="500"
+                    <img src="images/cafe2.jpg" alt="cafe" width="500"
                         height="300">
                 </div>
                 <div class="card">
                     <img src="images/breakfast.jpg" alt="breakfast" width="500"
                         height="300">
-                        <img src="images/breakfast2.jpg" alt="breakfast" width="500"
+                    <img src="images/breakfast2.jpg" alt="breakfast" width="500"
                         height="300">
                 </div>
                 <div class="card">
                     <img src="images/desserts.jpg" alt="desserts" width="500"
                         height="300">
-                        <img src="images/desserts.jpg" alt="desserts" width="500"
+                    <img src="images/desserts2.jpg" alt="desserts2" width="500"
                         height="300">
                 </div>
             </div>
@@ -181,7 +192,8 @@
                     email, or via our social media channels.</p>
                 <div class="contact__text">
                     <p><span><i class='bx bxs-phone'></i></span> 123-456-7890</p>
-                    <p><span><i class='bx bxs-envelope'></i></span> contact@catnap.cafe</p>
+                    <p><span><i class='bx bxs-envelope'></i></span>
+                        contact@catnap.cafe</p>
                 </div>
             </div>
             <div class="contact__image">
@@ -201,7 +213,7 @@
             </div>
             <p class="footer__text">Visit us today and experience the magic of
                 CATnap Cafe.</p>
-            <p>&#169; 2023 CATnap Cafe</p>
+            <p>&#169; 2023 CATnap Cafe - copyright all right reserved</p>
         </footer>
     </body>
 </html>
