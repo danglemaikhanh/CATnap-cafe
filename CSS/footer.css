@@ -1,0 +1,29 @@
+.footer__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.footer__line {
+    display: block;
+    width: 200px;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-color);
+}
+
+.footer__icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.footer__icons ul li {
+    font-size: 2rem;
+}
+.footer__icons ul li i:hover {
+    color: var(--main-color);
+}
