@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="CSS/styles.css">
         <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/animation.css">
         <link rel="stylesheet" href="CSS/footer.css">
         <!-- JS -->
         <script src="js/script.js" defer></script>
@@ -62,7 +63,7 @@
                 </div>
             </article>
             <!-- About -->
-            <article id="about" class="article">
+            <article id="about" class="about article">
                 <h2 class="article__title">About us</h2>
                 <div class="about__info">
                     <p>Welcome to CATnap Cafe - where delightful coffee and
@@ -84,160 +85,206 @@
                     </div>
                 </div>
             </article>
-                <!-- Info -->
-                <div class="info article">
-                    <h2>what is waiting for you</h2>
-                    <div class="info__box grid">
-                        <div class="info__image">
-                            <img src="images/stare.jpg" alt="stare">
+            <!-- Info -->
+            <div class="info">
+                <h2>what is waiting for you</h2>
+                <div class="info__box grid">
+                    <div class="info__image">
+                        <img src="images/stare.jpg" alt="stare">
+                    </div>
+                    <div class="info__text grid">
+                        <div>
+                            <h3 class="info__subtitle"><span><i
+                                        class='bx bxs-cat'></i></span>
+                                Cats</h3>
+                            <p>Our cats are the heart of CATnap Cafe. They
+                                are all
+                                rescued from the streets and shelters.</p>
                         </div>
-                        <div class="info__text grid">
-                            <div>
-                                <h3 class="info__subtitle"><span><i
-                                            class='bx bxs-cat'></i></span>
-                                    Cats</h3>
-                                <p>Our cats are the heart of CATnap Cafe. They
-                                    are all
-                                    rescued from the streets and shelters.</p>
-                            </div>
-                            <div>
-                                <h3 class="info__subtitle"><span><i
-                                            class='bx bxs-coffee'></i></span>
-                                    Coffee</h3>
-                                <p>At CATnap Cafe, coffee is more than a
-                                    beverage-it's a
-                                    comforting companion during your moments of
-                                    feline-inspired relaxation.</p>
-                            </div>
-                            <div>
-                                <h3 class="info__subtitle"><span><i
-                                            class='bx bxs-baguette'></i></span>
-                                    Bakery</h3>
-                                <p>Indulge in the irresistible aromas and
-                                    flavors of our
-                                    bakery delights at CATnap Cafe, where every
-                                    bite is as
-                                    comforting as the purring cats around you.</p>
-                            </div>
-                            <div>
-                                <h3 class="info__subtitle"><span><i
-                                            class='bx bxs-battery-charging'></i></span>
-                                    Stress-free</h3>
-                                <p>Experience stress-free bliss at CATnap Cafe,
-                                    where the
-                                    soothing presence of cats and tranquil
-                                    atmosphere melt
-                                    away your worries.</p>
-                            </div>
+                        <div>
+                            <h3 class="info__subtitle"><span><i
+                                        class='bx bxs-coffee'></i></span>
+                                Coffee</h3>
+                            <p>At CATnap Cafe, coffee is more than a
+                                beverage-it's a
+                                comforting companion during your moments of
+                                feline-inspired relaxation.</p>
+                        </div>
+                        <div>
+                            <h3 class="info__subtitle"><span><i
+                                        class='bx bxs-baguette'></i></span>
+                                Bakery</h3>
+                            <p>Indulge in the irresistible aromas and
+                                flavors of our
+                                bakery delights at CATnap Cafe, where every
+                                bite is as
+                                comforting as the purring cats around you.</p>
+                        </div>
+                        <div>
+                            <h3 class="info__subtitle"><span><i
+                                        class='bx bxs-battery-charging'></i></span>
+                                Stress-free</h3>
+                            <p>Experience stress-free bliss at CATnap Cafe,
+                                where the
+                                soothing presence of cats and tranquil
+                                atmosphere melt
+                                away your worries.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Menu -->
-                <article id="menu" class="menu article">
-                    <h2 class="article__title">Our menu</h2>
-                    <div class="menu__cards">
-                        <div class="card">
-                            <img src="images/cafe.jpg" alt="cafe" width="500"
-                                height="300">
-                            <img src="images/cafe2.jpg" alt="cafe" width="500"
-                                height="300">
-                        </div>
-                        <div class="card">
-                            <img src="images/breakfast.jpg" alt="breakfast"
-                                width="500"
-                                height="300">
-                            <img src="images/breakfast2.jpg" alt="breakfast"
-                                width="500"
-                                height="300">
-                        </div>
-                        <div class="card">
-                            <img src="images/desserts.jpg" alt="desserts"
-                                width="500"
-                                height="300">
-                            <img src="images/desserts2.jpg" alt="desserts2"
-                                width="500"
-                                height="300">
+            </div>
+            <!-- Menu -->
+            <article id="menu" class="menu article">
+                <h2 class="article__title">Our menu</h2>
+                <div class="menu__cards grid">
+                    <div class="card animated">
+                        <img src="images/cafe.jpg" alt="cafe">
+                        <img src="images/cafe2.jpg" alt="cafe2">
+                        <div class="card__intro">
+                            <h3>Coffee</h3>
+                            <p>Our coffee is made from the finest beans, roasted to perfection. 
+                                Enjoy the rich aroma and smooth taste of our coffee, 
+                                and let it warm your heart.</p>
+                            <div class="footer__line"></div>
+                            <ul>
+                                <li>Cappucino <span>$1.99</span></li>
+                                <li>Latte <span>$2.99</span></li>
+                                <li>Espresso <span>$1.99</span></li>
+                                <li>Americano <span>$2.99</span></li>
+                            </ul>
                         </div>
                     </div>
-                </article>
-                <!-- Cats -->
-                <article id="cats" class="cats article">
-                    <h2 class="article__title">Meet our cats</h2>
-                    <div class="cats__cards">
-                        <div class="cat">
-                            <img src="images/cat1.jpg" alt="cat1" width="500"
-                                height="300">
-                        </div>
-                        <div class="cat">
-                            <img src="images/cat2.jpg" alt="cat2" width="500"
-                                height="300">
-                        </div>
-                        <div class="cat">
-                            <img src="images/cat3.jpg" alt="cat3" width="500"
-                                height="300">
-                        </div>
-                        <div class="cat">
-                            <img src="images/cat4.jpg" alt="cat4" width="500"
-                                height="300">
+                    <div class="card animated">
+                        <img src="images/breakfast.jpg" alt="bf">
+                        <img src="images/breakfast2.jpg" alt="bf2">
+                        <div class="card__intro">
+                            <h3>Breakfast</h3>
+                            <p>Our breakfasts are made with the freshest ingredients, 
+                                and are sure to satisfy your appetite. Start your day with a hearty 
+                                breakfast at CATnap Cafe.</p>
+                            <div class="footer__line"></div>
+                            <ul>
+                                <li>Bagel <span>$6.99</span></li>
+                                <li>Toast <span>$5.99</span></li>
+                                <li>Waffle <span>$7.99</span></li>
+                                <li>Pancake <span>$8.99</span></li>
                         </div>
                     </div>
-                </article>
-                <!-- Reserve -->
-                <article id="reserve" class="article">
-                    <h2 class="article__title">Reserve</h2>
-                    <div class="reserve__box grid">
-                        <div>
+                    <div class="card animated">
+                        <img src="images/desserts.jpg" alt="ds">
+                        <img src="images/desserts2.jpg" alt="ds2">
+                        <div class="card__intro">
+                            <h3>Desserts</h3>
+                            <p>Our desserts are made with love and care, 
+                                and are sure to delight your taste buds. 
+                                Indulge in our sweet treats at CATnap Cafe.</p>
+                            <div class="footer__line"></div>
+                            <ul>
+                                <li>Cheesecake <span>$5.99</span></li>
+                                <li>Chocolate Cake <span>$6.99</span></li>
+                                <li>Ice Cream <span>$4.99</span></li>
+                                <li>Cookie <span>$3.99</span></li>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Cats -->
+            <article id="cats" class="cats article">
+                <h2 class="article__title">Meet our cats</h2>
+                <div class="cat__cards grid">
+                    <div class="cat animated">
+                        <img class="zoom" src="images/cat1.jpg" alt="cat1">
+                        <div class="cat__intro">
+                            <h3>Blumchen</h3>
+                            <p>a gentle cat, friendly and affectionate, he delights in being petted and pampered by people. 
+                                He also loves to engage with people, always eager to communicate and share his enthusiasm.</p>
+                        </div>
+                    </div>
+                    <div class="cat animated">
+                        <img class="zoom" src="images/cat2.jpg" alt="cat2">
+                        <div class="cat__intro">
+                            <h3>Alphatier</h3>
+                            <p>a curious cat, is always on the hunt, exploring every nook and cranny 
+                                in search of something new and exciting. Yet, amidst its adventurous spirit, 
+                                he craves attention and affection, often seeking cuddles and playtime.</p>
+                        </div>
+                    </div>
+                    <div class="cat animated">
+                        <img class="zoom" src="images/cat3.jpg" alt="cat3">
+                        <div class="cat__intro">
+                            <h3>Smoki</h3>
+                            <p>a incredibly active cat, bundle of energy, constantly on the move and ready 
+                                for action. With an insatiable appetite for both play and affection, he is as lively 
+                                as they come, keeping you entertained and on your toes.</p>
+                        </div>
+                    </div>
+                    <div class="cat animated">
+                        <img class="zoom" src="images/cat4.jpg" alt="cat4">
+                        <div class="cat__intro">
+                            <h3>Zoft</h3>
+                            <p>a older cat. He spends his days in cozy naps and relishes delicious meals. However, despite 
+                                his tranquil lifestyle, he exhibits an amazing zest for life. With a spark of curiosity and 
+                                a hint of adventure, this cat can still bring surprises.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Reserve -->
+            <article id="reserve" class="article animated">
+                <h2 class="article__title">Reserve</h2>
+                <div class="reserve__box grid">
+                    <div>
                         <img src="images/reserve.jpg" alt="cat">
-                        </div>
-                        <div>
-                            <form action="index.html" method="post" id="form">
-                                <input id="name" type="text" name="name"
-                                    placeholder="Your name" required>
-                                <input id="email" type="email" name="email"
-                                    placeholder="Your email" required>
-                                <br>
-                                <textarea id="details" name="details" rows="4"
-                                    cols="50"
-                                    placeholder="Where, how many, etc..."></textarea>
-                                <br>
-                                <input type="submit" value="Book" class="button">
-                            </form>
-                        </div>
                     </div>
-                </article>
-                <!-- Contact -->
-                <article id="contact" class="article">
-                    <h2 class="article__title">Contact us</h2>
-                    <div class="contact__info">
-                        <img src="images/shop.jpg" alt="shop">
-                        <p>Have questions? We're happy to help. Contact us by
-                            phone,
-                            email, or via our social media channels.</p>
-                        <div class="contact__text">
-                            <p><span><i class='bx bxs-phone'></i></span>
-                                123-456-7890</p>
-                            <p><span><i class='bx bxs-envelope'></i></span>
-                                contact@catnap.cafe</p>
-                        </div>
-                        
-                    </div>    
-                </article>
-            </main>
-            <footer>
-                <p class="footer__title">What are you waiting for?</p>
-                <div class="footer__line"></div>
-                <div class="footer__icons">
-                    <ul>
-                        <li><i class='bx bxl-facebook'></i></li>
-                        <li><i class='bx bxl-instagram-alt'></i></li>
-                        <li><i class='bx bxl-twitter'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                    </ul>
+                    <div>
+                        <form action="index.html" method="post" id="form">
+                            <input id="name" type="text" name="name"
+                                placeholder="Your name" required>
+                            <input id="email" type="email" name="email"
+                                placeholder="Your email" required>
+                            <br>
+                            <textarea id="details" name="details" rows="4"
+                                cols="50"
+                                placeholder="Where, how many, etc..."></textarea>
+                            <br>
+                            <input type="submit" value="Book" class="button">
+                        </form>
+                    </div>
                 </div>
-                <p class="footer__text">Visit us today and experience the magic
-                    of
-                    CATnap Cafe.</p>
-                <p>&#169; 2023 CATnap Cafe - copyright all right reserved</p>
-            </footer>
-        </body>
-    </html>
+            </article>
+            <!-- Contact -->
+            <article id="contact" class="article">
+                <h2 class="article__title">Contact us</h2>
+                <div class="contact__info animated">
+                    <img src="images/shop.jpg" alt="shop">
+                    <p>Have questions? We're happy to help. Contact us by
+                        phone,
+                        email, or via our social media channels.</p>
+                    <div class="contact__text animated">
+                        <p><span><i class='bx bxs-phone'></i></span>
+                            123-456-7890</p>
+                        <p><span><i class='bx bxs-envelope'></i></span>
+                            contact@catnap.cafe</p>
+                    </div>
+
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p class="footer__title">What are you waiting for?</p>
+            <div class="footer__line"></div>
+            <div class="footer__icons">
+                <ul>
+                    <li><i class='bx bxl-facebook'></i></li>
+                    <li><i class='bx bxl-instagram-alt'></i></li>
+                    <li><i class='bx bxl-twitter'></i></li>
+                    <li><i class='bx bxl-youtube'></i></li>
+                </ul>
+            </div>
+            <p class="footer__text">Visit us today and experience the magic
+                of
+                CATnap Cafe.</p>
+            <p>&#169; 2023 CATnap Cafe - copyright all right reserved</p>
+        </footer>
+    </body>
+</html>

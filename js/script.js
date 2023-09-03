@@ -15,4 +15,40 @@
             icon.classList.replace('bx-x', 'bx-menu');
         }
     }
+    /*==== Scroll Nav Menu ====*/
+    const navLink = document.querySelectorAll('.link');
+    const articles = document.querySelectorAll('.article');
+    let currentArticle = 'home';
+    window.addEventListener('scroll', () => {
+        articles.forEach(article => {
+            if (window.scrollY >= article.offsetTop - 100) {
+                currentArticle = article.id;
+            }
+        });
+        navLink.forEach(link => {
+            if (link.href.includes(currentArticle)) {
+                document.querySelector('.active').classList.remove('active');
+                link.classList.add('active');
+            }
+        });
+    });
+    /*==== Scroll Reveal Animation ====*/
+    const elementsToAnimate = document.querySelectorAll(".animated");
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5
+    };
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("go");
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
 })();
