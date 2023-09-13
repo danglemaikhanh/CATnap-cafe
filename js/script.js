@@ -32,23 +32,4 @@
             }
         });
     });
-    /*==== Scroll Reveal Animation ====*/
-    const elementsToAnimate = document.querySelectorAll(".animated");
-    const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5
-    };
-    function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("go");
-                observer.unobserve(entry.target);
-            }
-        });
-    }
-    const observer = new IntersectionObserver(handleIntersection, options);
-    elementsToAnimate.forEach(element => {
-        observer.observe(element);
-    });
 })();
